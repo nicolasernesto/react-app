@@ -15,6 +15,8 @@ root.render(
     // los componentes son invisibles para html, por eso se renderizan con .render
     // podemos mandar propiedades a los elementos como parametros, a los cuales se pueden acceder mediante props.namepropiedad
     // al igual que los backtits en js, podemos utilizar esta vez en jsx sin los backtics la sintaxis {} para hacer referencia a variables
-    // react no identifica los cambios en index.js pero si en todos los otros archivos, por tanto hay que recargar la pagina 
+    // react no identifica los cambios en index.js pero si en todos los otros archivos, por tanto hay que recargar la pagina
+    // si escribimos al componene con dos etiquetas una de apertura y otra de cierre <app> ....CONTENT... </app> todo lo que le mandemos
+    // en content quedara guardado o referenciado por defecto por props.children!!
 );
  
