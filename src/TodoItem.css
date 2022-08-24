@@ -1,12 +1,21 @@
 li{
     border: 1px solid black;
     text-decoration: none;
+    display: flex;
      
-    width: 50%;
+    width: 100%;
+    font-size: 30px;
 }
-li *{
-    display: inline;
+p{  margin: 0;
+    border: 1px solid blue;
+    width: 200px;
+}
+.first{
+    padding-left: 20px;
+    padding-right: 100px;
 }
 span{
-     
+    padding-left: 30px;
 }
+
+ 
