@@ -14,15 +14,12 @@ function App(props) {
   return (
     <React.Fragment>
     <TodoCounter />
-    
     <TodoSearch />
-    <input placeholder='cebolla'></input>
     <TodoList>
       {todos.map(todo => (
-        <TodoItem key={todo.text} text={todo.text} />{/*Al momento de iterar listas y renderizar, se manda key 
-        obligatoriamente para identificar cada valor
-       */}
+        <TodoItem key={todo.text} text={todo.text} />  
       ))}
+      {/* se debe mandar un identificador cuando se renderizan lists */}
     </TodoList>
     <CreateTodoButton/>
     <button>+</button>
