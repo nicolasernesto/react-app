@@ -17,5 +17,14 @@ p{  margin: 0;
 span{
     padding-left: 30px;
 }
+.active{
+    color:greenyellow;
+}
+.nonactive{
+    color: white;
+}
+.active-p{
+    text-decoration: line-through;
+}
 
  
