@@ -1,9 +1,9 @@
-import logo from './logo.svg';
+
 import React from 'react';
-import { TodoCounter } from '../TodoCounter';
+import { TodoCounter } from '../TodoCounter/index';
 import {TodoItem} from '../TodoItem'
-import {TodoList} from '../TodoList'
-import {CreateTodoButton} from '../button/CreateTodoButton'
+import {TodoList} from '../TodoList/index'
+import {CreateTodoButton} from '../CreateTodoButton/index.js'
 import {TodoSearch} from '../TodoSearch'
 import './App.css';
 import "./General.css"
@@ -33,7 +33,7 @@ function App(props) {
     
   }
   const completeTodos = (text) => {
-    const todoindex = todos.findIndex(todo => todo.text == text)
+    const todoindex = todos.findIndex(todo => todo.text === text)
     const newTodos = [...todos]  // 
     newTodos[todoindex] = {
       text: newTodos[todoindex].text ,
@@ -43,7 +43,7 @@ function App(props) {
     
   }
   const deleteTodos = (text) => {
-    const todoindex = todos.findIndex(todo => todo.text == text)
+    const todoindex = todos.findIndex(todo => todo.text === text)
     const newTodos = [...todos]  // 
     newTodos.splice(todoindex,1)
     setTodos(newTodos)
