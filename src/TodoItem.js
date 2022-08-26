@@ -12,10 +12,10 @@ function TodoItem(propied){
 
     return (
         <li>
-            <span onClick={onComplete} className={`first icon-check ${propied.completed && 'active'}`}>√</span>
-            a
+            <span onClick={propied.onComplete} className={`first icon-check ${propied.completed && 'active'}`}>√</span>
+             
             <p className={`${propied.completed && 'active-p'}`}>{propied.text}</p>
-            <span onClick={onDelete} className={`icon-check ${propied.completed && 'active'}`}>X</span>
+            <span onClick={propied.onDelete} className={`icon-check`}>X</span>
 
 
         </li>
